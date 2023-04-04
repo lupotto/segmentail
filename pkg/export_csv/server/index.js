@@ -55,4 +55,3 @@ https.createServer(options, expressApp).listen(port, function () {
     console.log(chalk.bold.red(port + " port is already in use"));
   }
 });
-

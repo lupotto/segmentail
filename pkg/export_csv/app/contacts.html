@@ -7,9 +7,9 @@
     <!--  <link rel = "stylesheet" href="lib/bootstrap/css/bootstrap.min.css">-->
     <script
       type="text/javascript"
-      src="https://live.zwidgets.com/js-sdk/1.1/ZohoEmbededAppSDK.min.js"
+      src="https://live.zwidgets.com/js-sdk/1.0.6/ZohoEmbededAppSDK.min.js"
     ></script>
-    <!-- <script type="text/javascript" src="lib/ZohoEmbededAppSDK.min.js"></script> -->
+    <!-- https://live.zwidgets.com/js-sdk/1.1/ZohoEmbededAppSDK.min.js -->
     <script type="text/javascript" src="lib/jquery.js"></script>
     <script type="text/javascript" src="lib/jszip.js"></script>
     <script type="text/javascript" src="bulk_read.js"></script>
@@ -26,12 +26,22 @@
     </div>
     <div class="BG">
       <div class="login">
+        <label for="idView"><b>Id Vista</b></label>
+        <input
+          class="password"
+          id="idView"
+          placeholder="Entra la ID de la vista"
+          name="idV"
+          required
+        />
+      </div>
+      <div class="login">
         <label for="psw"><b>Token</b></label>
         <input
           type="password"
           class="password"
           id="passw"
-          placeholder="Entra el token de autentificación"
+          placeholder="Entra el token de autententificacion"
           name="psw"
           required
         />
@@ -41,7 +51,7 @@
         <button class="cancelSMS" id="submit2" onclick="cancel_export()">
           Cancelar
         </button>
-        <button class="sendSMS" id="submit1" onclick="test()">
+        <button class="sendSMS" id="submit1" onclick="export_csv_ajax_zoho()">
           Exportar CSV
         </button>
       </div>
