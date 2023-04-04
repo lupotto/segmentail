@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href= "css/style.css" rel="stylesheet" type="text/css">
+  <!--  <link rel = "stylesheet" href="lib/bootstrap/css/bootstrap.min.css">-->
+    <script type = "text/javascript" src ="https://live.zwidgets.com/js-sdk/1.0.5/ZohoEmbededAppSDK.min.js">    </script>
+    <script type = "text/javascript" src = "lib/jquery.js"> </script>
+  <!--  <script type = "text/javascript" src = "lib/bootstrap/js/bootstrap.min.js"> </script>-->
+      <script type = "text/javascript" src = connector_esendex_v2.js> </script>
+    <script type = "text/javascript" src = segmentail.js> </script>
+
+
+  </head>
+
+  <body>
+    <div class = "username_ko" > <b> Usuario o contraseña incorrecto </b> </div>
+    <div class = "SMS_empty"> <b> Mensaje vacío </b> </div>
+    <div class = "esendex_ko" > <b> Cuenta ESENDEX incorrecta </b> </div>
+    <div class = "credits_ko" > <b> Faltan créditos en la cuenta </b> </div>
+    <div class = "sms_ok"> <b> Mensajes enviados correctamente</b> </div>
+    <div class = "sms_length" > <b> Más de 160 caracteres. Se enviarán 2 mensajes si envias este texto.</b> </div>
+    <div class = "campaign" > <b>Inserte nombre de campaña</b> </div>
+
+    <div class = "header">
+      <!--<img src="imgs/segmentail_logo.jpg" alt="logo" />-->
+      <img src="imgs/segmentail_light.png" alt="logo" />
+    <!--  <h1> Enviar SMS con Segmentail </h1>-->
+    </div>
+    <div class = "BG">
+
+<!--
+      <div class = "login">
+
+        <label class= "user_name" for="uname"><b>Nombre de usuario</b></label>
+        <input type="text" class="usrname" id="username" placeholder="Entra nombre de usuario" name="uname" required>
+
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" class="password" id="passw" placeholder="Entra contraseña" name="psw" required>
+
+        <label for="esendex_name"><b>Cuenta Esendex</b></label>
+        <input type="text" class="ex_name" id="esendex_account" placeholder="Introduce cuenta Esendex" name="esendex_name" required>
+
+
+      </div>
+-->
+
+      <div class = "fld">
+
+        <div class = "fldvaluebox">
+          <label class="sms"><b>Mensaje</b></label>
+            <textarea class = "contentSMS" placeholder="Escribe tu mensaje aqui ..." id = "msgcontent" type = "text" name = "Message content"></textarea>
+            <p>
+              <span id="remaining">160 carácteres restantes</span>
+              <span id="messages">1 mensaje(s)</span>
+            </p>
+        </div>
+
+      </div>
+
+      <div class = "btnbg">
+        <button class = "cancelSMS"  id = "submit2" onclick="cancel_sms()"> Cancelar</button>
+        <button class = "sendSMS"  id = "submit1" onclick=sendsms_v2()> Enviar SMS</button>
+      </div>
+      <div class="load" style="position:absolute; left:330px; bottom:10px; display: none;" >
+        <div class="loader"></div>
+      </div>
+
+    </div>
+
+  </body>
+  <!-- TODO AQUI!!!!!-->
+  <div  id="confirmSendSMS" data-dismiss="modal"style="display:none">
+          <div class="buttons confirmation">
+              <button type="button" id= "cancelSend" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" id="confirmSend" class="btn btn-primary">Enviar SMS</button>
+          </div>
+  </div>
+</div>
+
+</html>

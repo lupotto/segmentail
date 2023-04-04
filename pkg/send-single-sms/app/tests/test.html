@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<?xml version="1.0" encoding="utf-8"?>
+<messageheaders batchid="848d9374-3faa-1b09-0798-1465d190e481" xmlns="http://api.esendex.com/ns/">
+  <messageheader id="42126dcc-44b3-1a43-0399-1465d190de81" />
+</messageheaders>
+
+<messagebatch xmlns="http://api.esendex.com/ns/" id="e3e88b00-aaa7-1c3b-085e-1467b0882181" uri="https://api.esendex.com/v1.1/messagebatches/e3e88b00-aaa7-1c3b-085e-1467b0882181"><createdat>2020-07-21T16:18:56.707Z</createdat><batchsize>1</batchsize><persistedbatchsize>1</persistedbatchsize><status><acknowledged>0</acknowledged><authorisationfailed>0</authorisationfailed><connecting>0</connecting><delivered>0</delivered><failed>1</failed><partiallydelivered>0</partiallydelivered><rejected>0</rejected><scheduled>0</scheduled><sent>0</sent><submitted>0</submitted><validityperiodexpired>0</validityperiodexpired><cancelled>0</cancelled></status><accountreference>EX0314456</accountreference><createdby>alex.gracia.lupotto@gmail.com</createdby><name/></messagebatch>
+
+<script>
+
+
+var x = document.getElementsByTagName("messageheaders");
+
+//ways to take getAttribute
+console.log(response.getElementsByTagName("messageheaders")[0].getAttribute("batchid")); //WHYYYY??
+console.log(response.querySelector('messageheaders').getAttribute("batchid"));
+console.log(response.getElementsByTagName("messageheaders")[0].childNodes[0].id);
+/* FORS
+messages.forEach((message, i) => { // ES5 .forEach ES6 () => {}
+  /* if (message["No_participaci_n_de_SMS"]== false){
+    console.log(messages[i]["Full_Name"]);
+    mob = message["Phone"];
+    sms_module["Entregados"] = 0; //To change
+    sms_module["Entregados_parcialmente"] = 0;
+    sms_module["Fallidos"] = 0;
+
+    list_sms.push({"to": mob, "body": msgcontent});
+
+  } */
+//  });
+  /*
+  for (let message of messages) {
+    // ...
+  }*/
+
+</script>
+
+</html>
