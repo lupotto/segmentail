@@ -1,0 +1,36 @@
+[error] [2023-04-04T09:47:23.661Z] : ✖ Below file formats are not allowed in Sigma
+[info] [2023-04-04T09:47:23.661Z] :  ==> app/lib/bootstrap/css/bootstrap-grid.css.map
+[info] [2023-04-04T09:47:23.662Z] :  ==> app/lib/bootstrap/css/bootstrap-grid.min.css.map
+[info] [2023-04-04T09:47:23.662Z] :  ==> app/lib/bootstrap/css/bootstrap-reboot.css.map
+[info] [2023-04-04T09:47:23.662Z] :  ==> app/lib/bootstrap/css/bootstrap-reboot.min.css.map
+[info] [2023-04-04T09:47:23.662Z] :  ==> app/lib/bootstrap/css/bootstrap.css.map
+[info] [2023-04-04T09:47:23.662Z] :  ==> app/lib/bootstrap/css/bootstrap.min.css.map
+[info] [2023-04-04T09:47:23.663Z] :  ==> app/lib/bootstrap/js/bootstrap.bundle.js.map
+[info] [2023-04-04T09:47:23.663Z] :  ==> app/lib/bootstrap/js/bootstrap.bundle.min.js.map
+[info] [2023-04-04T09:47:23.663Z] :  ==> app/lib/bootstrap/js/bootstrap.js.map
+[info] [2023-04-04T09:47:23.663Z] :  ==> app/lib/bootstrap/js/bootstrap.min.js.map
+[info] [2023-04-04T09:47:23.663Z] : Note - File formats that can be packed are: txt, md, xml, dre, jpg, jpeg, png, gif, css, js, html, json, mp3, svg, woff, ttf, eot, webm, mp4, and woff2
+[error] [2023-04-04T09:47:53.667Z] : ✖ Below file formats are not allowed in Sigma
+[info] [2023-04-04T09:47:53.668Z] :  ==> app/lib/bootstrap/css/bootstrap-grid.css.map
+[info] [2023-04-04T09:47:53.668Z] :  ==> app/lib/bootstrap/css/bootstrap-grid.min.css.map
+[info] [2023-04-04T09:47:53.668Z] :  ==> app/lib/bootstrap/css/bootstrap-reboot.css.map
+[info] [2023-04-04T09:47:53.669Z] :  ==> app/lib/bootstrap/css/bootstrap-reboot.min.css.map
+[info] [2023-04-04T09:47:53.669Z] :  ==> app/lib/bootstrap/css/bootstrap.css.map
+[info] [2023-04-04T09:47:53.669Z] :  ==> app/lib/bootstrap/css/bootstrap.min.css.map
+[info] [2023-04-04T09:47:53.669Z] :  ==> app/lib/bootstrap/js/bootstrap.bundle.js.map
+[info] [2023-04-04T09:47:53.669Z] :  ==> app/lib/bootstrap/js/bootstrap.bundle.min.js.map
+[info] [2023-04-04T09:47:53.670Z] :  ==> app/lib/bootstrap/js/bootstrap.js.map
+[info] [2023-04-04T09:47:53.670Z] :  ==> app/lib/bootstrap/js/bootstrap.min.js.map
+[info] [2023-04-04T09:47:53.670Z] : Note - File formats that can be packed are: txt, md, xml, dre, jpg, jpeg, png, gif, css, js, html, json, mp3, svg, woff, ttf, eot, webm, mp4, and woff2
+[error] [2023-04-04T09:47:53.672Z] : ✖ Below file formats are not allowed in Sigma
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/css/bootstrap-grid.css.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/css/bootstrap-grid.min.css.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/css/bootstrap-reboot.css.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/css/bootstrap-reboot.min.css.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/css/bootstrap.css.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/css/bootstrap.min.css.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/js/bootstrap.bundle.js.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/js/bootstrap.bundle.min.js.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/js/bootstrap.js.map
+[info] [2023-04-04T09:47:53.673Z] :  ==> app/lib/bootstrap/js/bootstrap.min.js.map
+[info] [2023-04-04T09:47:53.673Z] : Note - File formats that can be packed are: txt, md, xml, dre, jpg, jpeg, png, gif, css, js, html, json, mp3, svg, woff, ttf, eot, webm, mp4, and woff2

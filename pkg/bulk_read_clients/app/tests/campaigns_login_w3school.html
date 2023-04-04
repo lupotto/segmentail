@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href= "style.css" rel="stylesheet" type="text/css">
+    <script type = "text/javascript" src ="https://live.zwidgets.com/js-sdk/1.0.5/ZohoEmbededAppSDK.min.js">    </script>
+    <script type = "text/javascript" src = "lib/jquery.js"> </script>
+    <script type = "text/javascript" src = segmentail.js> </script>
+    <script type = "text/javascript" src = connector_esendex.js> </script>
+  </head>
+
+  <body>
+    <div class = "success_ko" style="color:red; display:none;"> <b> Por favor entra mensaje correcto </b> </div>
+    <div class = "success" style="color:green; display:none;"> <b> Mensaje enviado correctamente</b> </div>
+
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login Esendex</button>
+
+    <div id="id01" class="modal">
+
+    <!--  <form class="modal-content animate" action="/action_page.php" method="post"> !-->
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="imgs/esendex_logo.jpg" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="esendex_name"><b>Esendex Account</b></label>
+          <input type="text" id="esendex_account" placeholder="Enter Esendex Account" name="esendex_name" required>
+
+          <label for="uname"><b>Username</b></label>
+          <input type="text" id="username" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="passw" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" onclick=onLoginEsendex()>Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none';check(this.form)"class="cancelbtn">Cancel</button>
+
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+
+      function check(){
+        console.log($("#username").val());
+      }
+    // Get the modal
+    var modal = document.getElementById('id01');
+    var username = document.getElementById('username').value;
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    <div class = "BG">
+      <div class = "header">
+        <h1> Esendex SMS by Segmentail </h1>
+      </div>
+
+
+      <div class = "sect_1">
+        <div class = "name">
+          <label class= "fldText"> Clientes totales </label>
+        </div>
+        <div class = "zoho_name">
+          <span id= "fullNameId" class = "vleText"> Loading ... </span>
+        </div>
+      </div>
+
+      <div class = "sect_2">
+        <div class = "phone">
+          <label class= "fldText"> Clientes con autorización</label>
+        </div>
+        <div class = "zoho_phone">
+          <span id= "phoneId" class = "vleText"> Loading ... </span>
+        </div>
+      </div>
+
+      <div class = "fld">
+        <div class = "fldvaluebox">
+            <textarea class = "valueboxtext" placeholder="Type your message here ..." id = "msgcontent" type = "text" name = "Message content"></textarea>
+        </div>
+
+      </div>
+
+      <div class = "btnbg">
+        <button class = "primaryBtn fR" id = "submit1" onclick=sendsms_v2()> Send SMS </button>
+        <button class = "secondaryBtn fR" id = "submit2" onclick=cancel_sms()> Cancel SMS </button>
+
+      </div>
+
+    </div>
+  </body>
+
+</html>
